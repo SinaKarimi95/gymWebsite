@@ -4,9 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Workout Plan</title>
+    <style>
+      /* Dark Mode Styles */
+      .dark {
+        background-color: #1f2937; /* Dark mode background color */
+        color: #f3f4f6; /* Dark mode text color */
+      }
+      /* Positioning for Dark Mode Toggle */
+      .dark-toggle {
+        position: fixed;
+        top: 20px; /* Adjust top margin as needed */
+        right: 20px; /* Adjust right margin as needed */
+      }
+    </style>
   </head>
 
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 dark:bg-gray-900">
+    <!-- Dark mode toggle -->
+    <div class="dark-toggle">
+      <label for="dark-toggle" class="flex items-center cursor-pointer">
+        <div class="relative">
+          <input
+            type="checkbox"
+            name="dark-mode"
+            id="dark-toggle"
+            class="checkbox hidden"
+          />
+          <div
+            class="block border-[1px] dark:border-white border-gray-900 w-14 h-8 rounded-full"
+          >
+          </div>
+          <div
+            class="dot absolute left-1 top-1 dark:bg-white bg-gray-800 w-6 h-6 rounded-full transition"
+          >
+          </div>
+          Dark Mode
+        </div>
+      </label>
+    </div>
+
+    <!-- Content -->
     <section class="container mx-auto p-4">
       <h1 class="text-4xl font-semibold mb-4 flex justify-center">
         Summer Body Workout Plan
@@ -14,7 +51,9 @@
 
       <!-- Day 1 -->
       <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-5">
-        <div class="bg-white shadow-md p-4 rounded-lg">
+        <div
+        class="shadow-md p-4 rounded-lg transition duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+      >
           <h2 class="text-xl font-semibold mb-2">
             Day 1: Full Body Strength Training
           </h2>
@@ -76,7 +115,9 @@
         </div>
 
         <!-- Day 2 -->
-        <div class="bg-white shadow-md p-4 rounded-lg">
+        <div
+        class="shadow-md p-4 rounded-lg transition duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+      >
           <h2 class="text-xl font-semibold mb-2">Day 2: Cardio and Core</h2>
           <ul class="list-disc ml-6">
             <li>
@@ -136,7 +177,9 @@
         </div>
 
         <!-- Day 3 -->
-        <div class="bg-white shadow-md p-4 rounded-lg">
+        <div
+        class="shadow-md p-4 rounded-lg transition duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+      >
           <h2 class="text-xl font-semibold mb-2">
             Day 3: Rest or Active Recovery
           </h2>
@@ -150,7 +193,9 @@
         </div>
 
         <!-- Day 4 -->
-        <div class="bg-white shadow-md p-4 rounded-lg">
+        <div
+        class="shadow-md p-4 rounded-lg transition duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+      >
           <h2 class="text-xl font-semibold mb-2">
             Day 4: Upper Body Strength Training
           </h2>
@@ -200,7 +245,9 @@
         </div>
 
         <!-- Day 5 -->
-        <div class="bg-white shadow-md p-4 rounded-lg">
+        <div
+        class="shadow-md p-4 rounded-lg transition duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+      >
           <h2 class="text-xl font-semibold mb-2">
             Day 5: Lower Body and Cardio
           </h2>
@@ -262,7 +309,9 @@
         </div>
 
         <!-- Day 6 -->
-        <div class="bg-white shadow-md p-4 rounded-lg">
+        <div
+          class="shadow-md p-4 rounded-lg transition duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+        >
           <h2 class="text-xl font-semibold mb-2">
             Day 6: Active Recovery or Rest
           </h2>
@@ -271,12 +320,14 @@
               <span class="ml-2"
                 >Rest day or light activity such as swimming or hiking</span
               >
-            </li> 
+            </li>
           </ul>
         </div>
 
         <!-- Day 7 -->
-        <div class="bg-white shadow-md p-4 rounded-lg">
+        <div
+        class="shadow-md p-4 rounded-lg transition duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+      >
           <h2 class="text-xl font-semibold mb-2">Day 7: Full Body HIIT</h2>
           <li>
             <input
@@ -338,9 +389,11 @@
         </div>
 
         <!-- Nutrition -->
-        <div class="bg-white shadow-md p-4 rounded-lg">
+        <div
+        class="shadow-md p-4 rounded-lg transition duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+      >
           <h2 class="text-xl font-semibold mb-2">Nutrition</h2>
-          <p class="text-gray-700">
+          <p>
             Ensure you're consuming enough protein to support muscle growth and
             repair. Aim for 1.6-2.2 grams of protein per kilogram of body weight
             per day. Incorporate lean protein sources such as chicken, turkey,
@@ -351,23 +404,38 @@
         </div>
 
         <!-- Hydration -->
-        <div class="bg-white shadow-md p-4 rounded-lg">
+        <div
+        class="shadow-md p-4 rounded-lg transition duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+      >
           <h2 class="text-xl font-semibold mb-2">Hydration</h2>
-          <p class="text-gray-700">
+          <p>
             Stay hydrated by drinking plenty of water throughout the day,
             especially before, during, and after your workouts.
           </p>
         </div>
 
         <!-- Recovery -->
-        <div class="bg-white shadow-md p-4 rounded-lg">
+        <div
+        class="shadow-md p-4 rounded-lg transition duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+      >
           <h2 class="text-xl font-semibold mb-2">Recovery</h2>
-          <p class="text-gray-700">
+          <p>
             Make sure to get adequate rest and sleep to allow your muscles to
             recover and grow. Aim for 7-9 hours of quality sleep each night.
           </p>
         </div>
       </div>
     </section>
+
+    <!-- Script -->
+    <script>
+      function darkModeListener() {
+        document.querySelector("html").classList.toggle("dark");
+      }
+
+      document
+        .querySelector("#dark-toggle")
+        .addEventListener("click", darkModeListener);
+    </script>
   </body>
 </html>
